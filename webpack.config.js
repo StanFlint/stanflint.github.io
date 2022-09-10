@@ -3,6 +3,17 @@ const path = require('path')
 
 module.exports = {
   entry: './src/index.js',
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          "css-loader",
+          "sass-loader"
+        ]
+      }
+    ]
+  },
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js'
