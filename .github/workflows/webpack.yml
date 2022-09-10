@@ -16,3 +16,6 @@ jobs:
         node-version: 16
     - run: npm ci
     - run: npm run build
+    - uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: dist
