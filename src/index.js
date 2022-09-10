@@ -1,0 +1,1 @@
+console.log('Created by Stan Flint ©2022')
