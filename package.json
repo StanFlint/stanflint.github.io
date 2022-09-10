@@ -4,6 +4,17 @@
   "description": "Personal website showcasing projects developed by Stan Flint",
   "author": "Stan Flint",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "serve": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.0"
   }
 }
