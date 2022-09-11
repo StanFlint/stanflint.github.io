@@ -1,0 +1,30 @@
+.container {
+  margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 900px;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+%icon-link {
+  position: relative;
+  display: block;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+  }
+}
