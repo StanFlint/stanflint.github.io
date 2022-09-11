@@ -24,3 +24,8 @@ jobs:
       uses: actions/upload-pages-artifact@v1.0.4
       with:
         path: dist
+
+  # Deploy job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
