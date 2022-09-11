@@ -17,6 +17,13 @@
   src: url("fonts/Poppins-ExtraBold.ttf");
 }
 
+// Voxorp font
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url("fonts/Nunito-Medium.ttf");
+}
+
 body {
   font-family: Poppins, sans-serif;
 }
