@@ -1,0 +1,40 @@
+.voxorp,
+.hexbois {
+  h2 {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      background-size: 100%;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 0.2rem;
+    }
+  }
+}
+
+.voxorp {
+  background-color: #fff0f8;
+
+  h2 {
+    @extend %voxorp-font;
+
+    &::before {
+      background-image: url("/src/images/voxorp-icon.png");
+    }
+  }
+}
+
+.hexbois {
+  background-color: #f0fbff;
+
+  h2 {
+    @extend %hexbois-font;
+
+    &::before {
+      background-image: url("/src/images/hexbois-icon.png");
+    }
+  }
+}

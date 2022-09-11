@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Poppins;
+  src: url("fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  src: url("fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 900;
+  src: url("fonts/Poppins-ExtraBold.ttf");
+}
+
+// Voxorp font
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url("fonts/Nunito-Medium.ttf");
+}
+
+// HEX BOIS font
+@font-face {
+  font-family: Asap;
+  font-weight: 700;
+  src: url("fonts/Asap-Medium.ttf");
+}
+
+%voxorp-font {
+  font-family: Nunito, sans-serif;
+  font-weight: bold;
+  color: #e40808;
+}
+
+%hexbois-font {
+  font-family: Asap, sans-serif;
+  font-weight: bold;
+  color: #fe1400;
+}
