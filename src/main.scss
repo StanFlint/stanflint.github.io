@@ -1,3 +1,20 @@
+@font-face {
+  font-family: Poppins;
+  src: url("fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700; // 700 is equivalent to 'bold'
+  src: url("fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 900;
+  src: url("fonts/Poppins-ExtraBold.ttf");
+}
+
 body {
     background-color: red;
 }
