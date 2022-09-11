@@ -20,7 +20,7 @@ jobs:
         npm ci
         npm run build
 
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Upload pages artifact 📦
+      uses: actions/upload-pages-artifact@v1.0.4
       with:
-        folder: dist
+        path: dist
