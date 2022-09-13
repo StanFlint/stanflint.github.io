@@ -1,5 +1,3 @@
-@import "/src/styles/variables";
-
 .voxorp,
 .hexbois {
   h2 {
@@ -21,18 +19,18 @@
 .voxorp {
   background-color: #fff0f8;
 
-  .voxorp-screenshot-1 {
-    height: 10rem;
+  .screenshot1 {
+    height: 9rem;
     background-image: url("/src/images/voxorp-screenshot-1.png");
   }
 
-  .voxorp-screenshot-2 {
+  .screenshot2 {
     height: 10rem;
     background-image: url("/src/images/voxorp-screenshot-2.png");
   }
 
-  .voxorp-screenshot-3 {
-    height: 10rem;
+  .screenshot3 {
+    height: 9rem;
     background-image: url("/src/images/voxorp-screenshot-3.png");
   }
 
@@ -47,6 +45,26 @@
 
 .hexbois {
   background-color: #f0fbff;
+
+  .screenshot1 {
+    height: 9rem;
+    background-image: url("/src/images/hexbois-screenshot-1.png");
+  }
+
+  .screenshot2 {
+    height: 9rem;
+    background-image: url("/src/images/hexbois-screenshot-2.png");
+  }
+
+  .screenshot3 {
+    height: 9rem;
+    background-image: url("/src/images/hexbois-screenshot-3.png");
+  }
+
+  .screenshot4 {
+    height: 11.5rem;
+    background-image: url("/src/images/hexbois-screenshot-4.png");
+  }
 
   h2 {
     @extend %hexbois-font;
