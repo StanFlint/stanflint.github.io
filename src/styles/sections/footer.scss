@@ -1,4 +1,23 @@
 footer {
   display: grid;
   grid-template-columns: auto auto auto;
+  gap: 1rem;
+
+  a {
+    display: block;
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: auto auto;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.1rem;
+    grid-template-columns: auto;
+
+    h3,
+    a {
+      padding-bottom: 0.4rem;
+    }
+  }
 }
