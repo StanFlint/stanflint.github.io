@@ -8,6 +8,7 @@
     &::before {
       content: "";
       background-size: 100%;
+      background-repeat: no-repeat;
       width: 2.5rem;
       height: 2.5rem;
       margin-right: 0.2rem;
@@ -17,6 +18,21 @@
 
 .voxorp {
   background-color: #fff0f8;
+
+  .screenshot1 {
+    height: 9rem;
+    background-image: url("/src/images/voxorp-screenshot-1.png");
+  }
+
+  .screenshot2 {
+    height: 10rem;
+    background-image: url("/src/images/voxorp-screenshot-2.png");
+  }
+
+  .screenshot3 {
+    height: 9rem;
+    background-image: url("/src/images/voxorp-screenshot-3.png");
+  }
 
   h2 {
     @extend %voxorp-font;
@@ -30,6 +46,26 @@
 .hexbois {
   background-color: #f0fbff;
 
+  .screenshot1 {
+    height: 9rem;
+    background-image: url("/src/images/hexbois-screenshot-1.png");
+  }
+
+  .screenshot2 {
+    height: 9rem;
+    background-image: url("/src/images/hexbois-screenshot-2.png");
+  }
+
+  .screenshot3 {
+    height: 9rem;
+    background-image: url("/src/images/hexbois-screenshot-3.png");
+  }
+
+  .screenshot4 {
+    height: 11.5rem;
+    background-image: url("/src/images/hexbois-screenshot-4.png");
+  }
+
   h2 {
     @extend %hexbois-font;
 
@@ -37,4 +73,16 @@
       background-image: url("/src/images/hexbois-icon.png");
     }
   }
+}
+
+.image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  clear: both;
+  margin: 0 0 1rem 1rem;
+  border-radius: 8px;
+  max-width: 16rem;
+  width: 40vw;
 }
