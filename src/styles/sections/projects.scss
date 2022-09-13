@@ -1,3 +1,5 @@
+@import "/src/styles/variables";
+
 .voxorp,
 .hexbois {
   h2 {
@@ -8,6 +10,7 @@
     &::before {
       content: "";
       background-size: 100%;
+      background-repeat: no-repeat;
       width: 2.5rem;
       height: 2.5rem;
       margin-right: 0.2rem;
@@ -17,6 +20,21 @@
 
 .voxorp {
   background-color: #fff0f8;
+
+  .voxorp-screenshot-1 {
+    height: 10rem;
+    background-image: url("/src/images/voxorp-screenshot-1.png");
+  }
+
+  .voxorp-screenshot-2 {
+    height: 10rem;
+    background-image: url("/src/images/voxorp-screenshot-2.png");
+  }
+
+  .voxorp-screenshot-3 {
+    height: 10rem;
+    background-image: url("/src/images/voxorp-screenshot-3.png");
+  }
 
   h2 {
     @extend %voxorp-font;
@@ -37,4 +55,16 @@
       background-image: url("/src/images/hexbois-icon.png");
     }
   }
+}
+
+.image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  clear: both;
+  margin: 0 0 1rem 1rem;
+  border-radius: 8px;
+  max-width: 16rem;
+  width: 40vw;
 }
