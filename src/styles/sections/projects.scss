@@ -20,18 +20,17 @@
   background-color: #fff0f8;
 
   .screenshot1 {
-    height: 9rem;
-    background-image: url("/src/images/voxorp-screenshot-1.png");
+    background-image: url("/src/images/voxorp-screenshot-1.webp");
   }
 
   .screenshot2 {
-    height: 10rem;
-    background-image: url("/src/images/voxorp-screenshot-2.png");
+    max-height: 10rem;
+    height: 24vw;
+    background-image: url("/src/images/voxorp-screenshot-2.webp");
   }
 
   .screenshot3 {
-    height: 9rem;
-    background-image: url("/src/images/voxorp-screenshot-3.png");
+    background-image: url("/src/images/voxorp-screenshot-3.webp");
   }
 
   h2 {
@@ -47,23 +46,21 @@
   background-color: #f0fbff;
 
   .screenshot1 {
-    height: 9rem;
-    background-image: url("/src/images/hexbois-screenshot-1.png");
+    background-image: url("/src/images/hexbois-screenshot-1.webp");
   }
 
   .screenshot2 {
-    height: 9rem;
-    background-image: url("/src/images/hexbois-screenshot-2.png");
+    background-image: url("/src/images/hexbois-screenshot-2.webp");
   }
 
   .screenshot3 {
-    height: 9rem;
-    background-image: url("/src/images/hexbois-screenshot-3.png");
+    background-image: url("/src/images/hexbois-screenshot-3.webp");
   }
 
   .screenshot4 {
-    height: 11.5rem;
-    background-image: url("/src/images/hexbois-screenshot-4.png");
+    height: 28vw;
+    max-height: 11.5rem;
+    background-image: url("/src/images/hexbois-screenshot-4.webp");
   }
 
   h2 {
@@ -84,5 +81,7 @@
   margin: 0 0 1rem 1rem;
   border-radius: 8px;
   max-width: 16rem;
+  max-height: 9rem;
+  height: 22vw;
   width: 40vw;
 }
