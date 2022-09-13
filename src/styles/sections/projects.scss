@@ -24,6 +24,8 @@
   }
 
   .screenshot2 {
+    max-height: 10rem;
+    height: 24vw;
     background-image: url("/src/images/voxorp-screenshot-2.webp");
   }
 
@@ -56,6 +58,8 @@
   }
 
   .screenshot4 {
+    height: 28vw;
+    max-height: 11.5rem;
     background-image: url("/src/images/hexbois-screenshot-4.webp");
   }
 
@@ -77,5 +81,7 @@
   margin: 0 0 1rem 1rem;
   border-radius: 8px;
   max-width: 16rem;
+  max-height: 9rem;
+  height: 22vw;
   width: 40vw;
 }
