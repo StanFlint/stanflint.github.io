@@ -19,7 +19,9 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js'
+    filename: '[name].[contenthash].js',
+    assetModuleFilename: 'assets/[name].[contenthash][ext][query]',
+    clean: true
   },
   plugins: [
     new MiniCssExtractPlugin(),
