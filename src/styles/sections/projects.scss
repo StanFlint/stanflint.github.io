@@ -1,5 +1,9 @@
 .voxorp,
 .hexbois {
+  > a {
+    text-decoration: none !important;
+  }
+
   h2 {
     font-size: 2.5rem;
     display: flex;
