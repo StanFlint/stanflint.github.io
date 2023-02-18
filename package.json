@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "author": "Stan Flint",
   "description": "Personal website showcasing projects developed by Stan Flint",
+  "type": "module",
   "scripts": {
     "dev": "vite dev",
 		"build": "vite build",
