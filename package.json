@@ -1,23 +1,27 @@
 {
   "name": "stanflint.github.io",
-  "version": "0.0.1",
-  "description": "Personal website showcasing projects developed by Stan Flint",
+  "version": "0.1.0",
   "author": "Stan Flint",
+  "description": "Personal website showcasing projects developed by Stan Flint",
   "scripts": {
-    "build": "webpack --mode production",
-    "serve": "webpack serve --mode development"
+    "dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "eslint ."
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.7.1",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.1",
-    "sass": "^1.54.9",
-    "sass-loader": "^13.0.2",
-    "stylelint": "^14.11.0",
-    "stylelint-config-standard-scss": "^5.0.0",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.0"
+    "@sveltejs/adapter-static": "^2.0.1",
+		"@sveltejs/kit": "^1.5.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"svelte": "^3.54.0",
+		"svelte-check": "^3.0.1",
+		"tslib": "^2.4.1",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0"
   }
 }
