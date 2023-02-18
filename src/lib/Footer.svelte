@@ -9,5 +9,11 @@
 		display: grid;
 		grid-template-columns: auto auto auto;
 		justify-content: space-between;
+
+		@media screen and (max-width: 500px) {
+			grid-template-columns: auto;
+			justify-content: center;
+			text-align: center;
+		}
 	}
 </style>
