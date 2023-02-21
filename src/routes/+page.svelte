@@ -4,10 +4,11 @@
 
 	import hexboisLogo from '$asset/image/hexbois-logo.png';
 	import voxorpLogo from '$asset/image/voxorp-logo.png';
+	import ScrollBanner from '$lib/ScrollBanner.svelte';
 </script>
 
 <Header />
-
+<ScrollBanner title="THE HEADLINES" />
 <main>
 	<section class="hexbois">
 		<a href="https://hexbois.com" target="_blank" rel="noreferrer">
