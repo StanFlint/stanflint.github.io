@@ -16,6 +16,9 @@
 			<h1 class="banner-scroll" use:watchResize={resize}>
 				{title}
 			</h1>
+			<div class="banner-scroll-offset" use:watchResize={resize}>
+				{title}
+			</div>
 		</div>
 	</div>
 </div>
@@ -42,6 +45,12 @@
 		margin: 0px;
 	}
 
+	.banner-scroll-offset {
+		@extend %banner-scroll-style;
+		animation-name: banner-scroll-offset;
+		margin-top: -60px;
+	}
+
 	%banner-scroll-style {
 		font-size: 2.5rem;
 		font-weight: bold;
@@ -58,6 +67,15 @@
 		}
 		100% {
 			transform: translateX(-100%);
+		}
+	}
+
+	@keyframes banner-scroll-offset {
+		0% {
+			transform: translateX(100%);
+		}
+		100% {
+			transform: translateX(0);
 		}
 	}
 </style>
