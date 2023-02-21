@@ -1,11 +1,19 @@
 <script lang="ts">
+	import { watchResize } from './util/watch-resize';
+
 	export let title = '';
+	export let speed = 50;
+
+	function resize(element: HTMLElement) {
+		const animationSpeed = element.clientWidth / speed;
+		element.style.animationDuration = `${animationSpeed}s`;
+	}
 </script>
 
 <div class="banner-background">
 	<div class="banner-center">
 		<div class="banner-container">
-			<h1 class="banner-scroll">
+			<h1 class="banner-scroll" use:watchResize={resize}>
 				{title}
 			</h1>
 		</div>
