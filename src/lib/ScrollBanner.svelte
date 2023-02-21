@@ -13,9 +13,9 @@
 <div class="banner-background">
 	<div class="banner-center">
 		<div class="banner-container">
-			<h1 class="banner-scroll" use:watchResize={resize}>
+			<h2 class="banner-scroll" use:watchResize={resize}>
 				{title}
-			</h1>
+			</h2>
 			<div class="banner-scroll-offset" use:watchResize={resize}>
 				{title}
 			</div>
