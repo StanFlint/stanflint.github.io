@@ -26,7 +26,7 @@
 	});
 </script>
 
-<Article color="#f0fbff" info={updatedTimeAgo} highlight>
+<Article color="#f0fbff" info={updatedTimeAgo} href="https://hexbois.com" highlight>
 	<img class="hexbois-image" src={hexboisLogo} alt="HEX BOIS" />
 	<span class="number-of-players">
 		<span class="live-circle" />

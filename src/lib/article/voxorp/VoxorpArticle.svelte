@@ -2,15 +2,18 @@
 	import Article from '../Article.svelte';
 
 	import voxorpLogo from '$asset/image/voxorp-logo.png';
+	import VoxorpHowToPlay from './VoxorpHowToPlay.svelte';
 </script>
 
-<Article color="#fff0f8" info="2020-2022">
+<Article color="#fff0f8" info="2020-2022" href="https://voxorp.com">
 	<img class="voxorp-image" src={voxorpLogo} alt="Voxorp" />
 	<p>
-		With 17 content updates since its release, Voxorp has accrued <b>over 1,000,000 minutes</b> of total
-		play time. The game focuses on giving players tools to create their own world in Voxorp's massive
-		open multiplayer world.
+		First released in August 2020 and completed through updates over the next two years, Voxorp
+		focuses on giving players a massive open world where they can build bases together and battle
+		other players for resources.
 	</p>
+
+	<VoxorpHowToPlay />
 </Article>
 
 <style lang="scss">
