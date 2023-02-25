@@ -4,39 +4,37 @@
 	import youtubeIcon from '$asset/image/youtube-icon.png';
 </script>
 
-<header>
-	<h1>Stan Flint</h1>
-	<h2>Scottish indie game developer</h2>
-	<div class="social-links">
-		<a
-			href="https://github.com/StanFlint"
-			title="GitHub"
-			target="_blank"
-			rel="noreferrer"
-			class="github"
-		>
-			<img src={githubIcon} alt="GitHub icon" />
-		</a>
-		<a
-			href="https://twitter.com/StanFlintDev"
-			title="Twitter"
-			target="_blank"
-			rel="noreferrer"
-			class="twitter"
-		>
-			<img src={twitterIcon} alt="Twitter icon" />
-		</a>
-		<a
-			href="https://www.youtube.com/channel/UCdznhGoKl0uCv__ZN7oETtQ"
-			title="YouTube"
-			target="_blank"
-			rel="noreferrer"
-			class="youtube"
-		>
-			<img src={youtubeIcon} alt="YouTube icon" />
-		</a>
-	</div>
-</header>
+<h1>Stan Flint</h1>
+<h2>Scottish indie game developer</h2>
+<div class="social-links">
+	<a
+		href="https://github.com/StanFlint"
+		title="GitHub"
+		target="_blank"
+		rel="noreferrer"
+		class="github"
+	>
+		<img src={githubIcon} alt="GitHub icon" />
+	</a>
+	<a
+		href="https://twitter.com/StanFlintDev"
+		title="Twitter"
+		target="_blank"
+		rel="noreferrer"
+		class="twitter"
+	>
+		<img src={twitterIcon} alt="Twitter icon" />
+	</a>
+	<a
+		href="https://www.youtube.com/channel/UCdznhGoKl0uCv__ZN7oETtQ"
+		title="YouTube"
+		target="_blank"
+		rel="noreferrer"
+		class="youtube"
+	>
+		<img src={youtubeIcon} alt="YouTube icon" />
+	</a>
+</div>
 
 <style lang="scss">
 	h1 {
