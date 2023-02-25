@@ -41,10 +41,9 @@
 
 			img {
 				display: block;
-				border-radius: 0.8rem;
+				border-radius: 0.6rem;
 				width: 100%;
 				max-height: 200px;
-				// max-width: 100%;
 				object-fit: cover;
 			}
 
