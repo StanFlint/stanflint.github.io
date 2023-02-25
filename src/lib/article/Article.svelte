@@ -25,7 +25,7 @@
 		position: relative;
 
 		&.highlight {
-			outline: 2px solid red;
+			border: 2px solid red;
 
 			&::before {
 				content: 'current project';
