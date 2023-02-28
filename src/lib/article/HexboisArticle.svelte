@@ -5,6 +5,7 @@
 	import Article from './Article.svelte';
 	import hexboisLogo from '$asset/image/hexbois-logo.png';
 	import { timeSince } from '$lib/util/time-display';
+	import LiveIndicator from '$lib/LiveIndicator.svelte';
 
 	let numberOfPlayers = '-';
 	let updatedTimeAgo = '-';
@@ -29,8 +30,7 @@
 <Article color="#f0fbff" info={updatedTimeAgo} href="https://hexbois.com" highlight>
 	<img class="hexbois-image" src={hexboisLogo} alt="HEX BOIS" />
 	<span class="number-of-players">
-		<span class="live-circle" />
-		<span style="color: red">live</span>
+		<LiveIndicator />
 		{numberOfPlayers} online
 	</span>
 	<div class="image screenshot1" />
@@ -87,17 +87,6 @@
 		float: right;
 	}
 
-	.live-circle {
-		background-color: red;
-		display: inline-block;
-		width: 8px;
-		height: 8px;
-		border-radius: 100%;
-		animation: live-flash 3s linear infinite;
-		margin: 0.1rem 0.15rem;
-		outline: 7px solid rgba(255, 0, 0, 0.5);
-	}
-
 	.screenshot1 {
 		background-image: url('$asset/image/hexbois-screenshot-1.webp');
 	}
@@ -128,17 +117,5 @@
 		max-height: 9rem;
 		height: 22vw;
 		width: 40vw;
-	}
-
-	@keyframes live-flash {
-		0%,
-		70% {
-			outline-width: 0px;
-			outline-color: rgba(255, 0, 0, 0.7);
-		}
-		100% {
-			outline-width: 5px;
-			outline-color: rgba(255, 0, 0, 0);
-		}
 	}
 </style>
