@@ -49,7 +49,7 @@
 
 	.info,
 	.read-more {
-		color: #737373;
+		color: var(--grey);
 	}
 
 	.info {
