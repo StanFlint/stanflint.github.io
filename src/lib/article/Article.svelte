@@ -56,12 +56,16 @@
 		float: left;
 	}
 
-	.read-more {
-		float: right;
-		text-decoration: none;
+	.bottom {
+		padding-top: 1rem;
 
-		&:hover {
-			text-decoration: underline;
+		.read-more {
+			float: right;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 </style>
