@@ -43,7 +43,7 @@
 		grid-template-columns: auto auto;
 		gap: 1rem;
 
-		@media screen and (max-width: 900px) {
+		@media screen and (max-width: 600px) {
 			grid-template-columns: auto;
 		}
 	}
