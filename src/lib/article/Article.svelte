@@ -25,7 +25,7 @@
 		position: relative;
 
 		&.highlight {
-			outline: 2px solid red;
+			border: 2px solid red;
 
 			&::before {
 				content: 'current project';
@@ -49,19 +49,23 @@
 
 	.info,
 	.read-more {
-		color: #737373;
+		color: var(--grey);
 	}
 
 	.info {
 		float: left;
 	}
 
-	.read-more {
-		float: right;
-		text-decoration: none;
+	.bottom {
+		padding-top: 1rem;
 
-		&:hover {
-			text-decoration: underline;
+		.read-more {
+			float: right;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 </style>
