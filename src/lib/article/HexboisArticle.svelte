@@ -7,7 +7,7 @@
 	import { timeSince } from '$lib/util/time-display';
 	import LiveIndicator from '$lib/LiveIndicator.svelte';
 
-	let numberOfPlayers = '-';
+	let numberOfPlayersAndMagnitude = '-';
 	let updatedTimeAgo = '-';
 	const API_URL_PRODUCTION = 'https://hexbois.com/api/public';
 	const API_URL_DEVELOPMENT = 'http://localhost:8080/api/public';
@@ -17,7 +17,16 @@
 		const response = await fetch(`${API_URL}/usage`);
 		const data = await response.json();
 		const { players, queuers } = data;
-		numberOfPlayers = `${players + queuers}`;
+		let numberOfPlayers = `${players + queuers}`;
+
+    if(numberOfPlayers.length > 6) {
+      numberOfPlayersAndMagnitude = `${numberOfPlayers.slice(0, -6)}.${numberOfPlayers.slice(-6, -5)}M`;
+    }else if (numberOfPlayers.length > 3) {
+      numberOfPlayersAndMagnitude = `${numberOfPlayers.slice(0, -3)}.${numberOfPlayers.slice(-3, -2)}K`;
+    }else{
+      numberOfPlayersAndMagnitude = numberOfPlayers;
+    }
+   
 	});
 
 	onMount(async () => {
@@ -31,7 +40,7 @@
 	<img class="hexbois-image" src={hexboisLogo} alt="HEX BOIS" />
 	<span class="number-of-players">
 		<LiveIndicator />
-		{numberOfPlayers} online
+		{numberOfPlayersAndMagnitude} online
 	</span>
 	<div class="image screenshot1" />
 	<div class="image screenshot2" />
