@@ -41,7 +41,7 @@
 	<img class="hexbois-image" src={hexboisLogo} alt="HEX BOIS" />
 	<span class="number-of-players">
 		<LiveIndicator />
-		{numberOfPlayersAndMagnitude} online
+		{formatNumberCompact(numberOfPlayers)} online
 	</span>
 	<div class="image screenshot1" />
 	<div class="image screenshot2" />
