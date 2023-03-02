@@ -18,16 +18,7 @@
 		const response = await fetch(`${API_URL}/usage`);
 		const data = await response.json();
 		const { players, queuers } = data;
-		let numberOfPlayers = `${players + queuers}`;
-
-    if(numberOfPlayers.length > 6) {
-      numberOfPlayersAndMagnitude = `${numberOfPlayers.slice(0, -6)}.${numberOfPlayers.slice(-6, -5)}M`;
-    }else if (numberOfPlayers.length > 3) {
-      numberOfPlayersAndMagnitude = `${numberOfPlayers.slice(0, -3)}.${numberOfPlayers.slice(-3, -2)}K`;
-    }else{
-      numberOfPlayersAndMagnitude = numberOfPlayers;
-    }
-   
+		numberOfPlayers = players + queuers;
 	});
 
 	onMount(async () => {
