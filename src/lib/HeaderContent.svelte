@@ -5,7 +5,7 @@
 </script>
 
 <h1>Stan Flint</h1>
-<h2>Scottish indie game developer</h2>
+<h2>Web developer. Focusing on shared, real-time experiences</h2>
 <div class="social-links">
 	<a
 		href="https://github.com/StanFlint"

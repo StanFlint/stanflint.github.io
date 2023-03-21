@@ -45,7 +45,7 @@
 	</p>
 
 	<p>
-		With its simple yet addictive gameplay, HEX BOIS has reached <b>over 500,000 players</b>.
+		With its simple yet addictive gameplay, HEX BOIS has been played <b>over 500,000</b> times.
 		Purchase hexagons to place on the board, making sure to balance your production of cash-flow
 		with your defences.
 	</p>

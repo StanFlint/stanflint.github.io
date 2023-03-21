@@ -52,4 +52,10 @@
 			max-height: 1.8rem;
 		}
 	}
+
+  ul {
+    @media screen and (max-width: 600px) {
+      padding-left: 0px;
+    }
+  }
 </style>
