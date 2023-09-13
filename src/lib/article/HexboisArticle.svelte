@@ -17,8 +17,8 @@
 	onMount(async () => {
 		const response = await fetch(`${API_URL}/usage`);
 		const data = await response.json();
-		const { players, queuers } = data;
-		numberOfPlayers = players + queuers;
+		const { players, waiters, browsers } = data;
+		numberOfPlayers = players + waiters + browsers;
 	});
 
 	onMount(async () => {
