@@ -1,25 +1,35 @@
 <script lang="ts">
+  export let thumbnailImgSrc: string
 	export let color = 'black';
 	export let href = '/';
 	export let info = '';
 	export let highlight = false;
 </script>
 
-<article class="{highlight ? 'highlight' : ''}  article" style="--color:{color}">
-	<div class="content">
-		<slot />
-	</div>
-	<div class="bottom">
-		<span class="info">{info}</span>
-		<a {href} class="read-more">check it out &rarr</a>
-	</div>
-</article>
+<a class="container" href={href}>
+  <article class="{highlight ? 'highlight' : ''}  article" style="--color:{color}">
+    <div class="thumbnail">
+      <img src={thumbnailImgSrc} alt="thumbnail" />
+    </div>
+    <div class="content">
+      <slot />
+      <div class="bottom">
+        <span class="info">{info}</span>
+        <a {href} class="read-more">check it out ↗</a>
+      </div>
+    </div>
+  </article>
+</a>
 
 <style lang="scss">
+  .container {
+    text-decoration: none;
+    color: inherit;
+  }
+
 	.article {
 		background-color: var(--color);
 		border-radius: 10px;
-		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 		position: relative;
@@ -43,17 +53,22 @@
 		}
 	}
 
+  .thumbnail {
+    width: 100%;
+
+    img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
 	.content {
-		flex: 1;
+		padding: 1rem;
 	}
-
-	.info,
-	.read-more {
-		color: var(--grey);
-	}
-
+  
 	.info {
-		float: left;
+    color: var(--grey);
+    float: left;
 	}
 
 	.bottom {
