@@ -5,7 +5,7 @@
 	import ScrollBanner from '$lib/ScrollBanner.svelte';
 	import ArticleGallery from '$lib/article/ArticleGallery.svelte';
 	import HexboisArticle from '$lib/article/HexboisArticle.svelte';
-	import VoxorpArticle from '$lib/article/voxorp/VoxorpArticle.svelte';
+	import VoxorpArticle from '$lib/article/VoxorpArticle.svelte';
 </script>
 
 <div class="page">

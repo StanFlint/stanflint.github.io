@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Article from '../Article.svelte';
+	import Article from './Article.svelte';
 	import voxorpLogo from '$asset/image/voxorp-logo.png';
   import voxorpThumbnail from '$asset/image/voxorp-thumbnail.png';
 </script>
