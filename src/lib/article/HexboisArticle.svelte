@@ -1,13 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { dev } from '$app/environment';
-
 	import Article from './Article.svelte';
 	import hexboisLogo from '$asset/image/hexbois-logo.png';
 	import { timeSince } from '$lib/util/time-display';
 	import LiveIndicator from '$lib/LiveIndicator.svelte';
 
-        const formatNumberCompact = Intl.NumberFormat('en', { notation: 'compact' }).format;
+  const formatNumberCompact = Intl.NumberFormat('en', { notation: 'compact' }).format;
 	let numberOfPlayers = 0;
 	let updatedTimeAgo = '-';
 	const API_URL_PRODUCTION = 'https://hexbois.com/api/public';
@@ -34,44 +33,10 @@
 		<LiveIndicator />
 		{formatNumberCompact(numberOfPlayers)} online
 	</span>
-	<div class="image screenshot1" />
-	<div class="image screenshot2" />
-	<div class="image screenshot3" />
-	<div class="image screenshot4" />
 
 	<p>
 		Build your empire of hexagons! Destroy other players in fast paced multiplayer battles. Manage
 		your money, defences and enemies as your empire grows!
-	</p>
-
-	<p>
-		With its simple yet addictive gameplay, HEX BOIS has been played <b>over 500,000</b> times.
-		Purchase hexagons to place on the board, making sure to balance your production of cash-flow
-		with your defences.
-	</p>
-
-	<h3>Account system</h3>
-	<p>
-		HEX BOIS has its own accounts system built on Google's SSO. Players with an account are able to
-		customize the colour of their hexagons as well as purchase 'skins' in the <a
-			href="https://hexbois.com/shop"
-			target="_blank"
-			rel="noreferrer">shop</a
-		> to add images to their hexagons. These purchases help the game's development. The account system
-		also allows for fine tune moderation controls within the game as well as other cool features like
-		switching devices during a match.
-	</p>
-	<p>
-		To keep the barrier of entry to play as low as possible, accounts are optional, players are
-		encouraged to create one, but all gameplay is available to 'guests' and playing is as easy as
-		picking a name and pressing play!
-	</p>
-
-	<h3>Mobile compatibility</h3>
-	<p>
-		With a modern, responsive website HEX BOIS fully supports the mobile gaming experience, all from
-		within the browser, on the same website as desktop players. This means HEX BOIS is available to
-		everyone, from the same codebase!
 	</p>
 </Article>
 
@@ -86,37 +51,5 @@
 
 	.number-of-players {
 		float: right;
-	}
-
-	.screenshot1 {
-		background-image: url('$asset/image/hexbois-screenshot-1.webp');
-	}
-
-	.screenshot2 {
-		background-image: url('$asset/image/hexbois-screenshot-2.webp');
-	}
-
-	.screenshot3 {
-		background-image: url('$asset/image/hexbois-screenshot-3.webp');
-	}
-
-	.screenshot4 {
-		height: 28vw;
-		max-height: 11.5rem;
-		background-image: url('$asset/image/hexbois-screenshot-4.webp');
-	}
-
-	.image {
-		background-size: 100%;
-		background-repeat: no-repeat;
-		background-position: center;
-		float: right;
-		clear: both;
-		margin: 0 0 1rem 1rem;
-		border-radius: 8px;
-		max-width: 16rem;
-		max-height: 9rem;
-		height: 22vw;
-		width: 40vw;
 	}
 </style>
