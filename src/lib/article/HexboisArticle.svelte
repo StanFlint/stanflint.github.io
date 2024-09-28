@@ -7,7 +7,7 @@
 	import LiveIndicator from '$lib/LiveIndicator.svelte';
 
   const formatNumberCompact = Intl.NumberFormat('en', { notation: 'compact' }).format;
-	let numberOfPlayers = 0;
+	let numberOfPlayers: number | undefined;
 	let updatedTimeAgo = '-';
 	const API_URL_PRODUCTION = 'https://hexbois.com/api/public';
 	const API_URL_DEVELOPMENT = 'http://localhost:8080/api/public';
@@ -31,7 +31,11 @@
 	<img class="hexbois-image" src={hexboisLogo} alt="HEX BOIS" />
 	<span class="number-of-players">
 		<LiveIndicator />
-		{formatNumberCompact(numberOfPlayers)} online
+    {#if numberOfPlayers === undefined}
+      ? online
+    {:else}
+		  {formatNumberCompact(numberOfPlayers)} online
+    {/if}
 	</span>
 
 	<p>
