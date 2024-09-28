@@ -3,6 +3,7 @@
 	import { dev } from '$app/environment';
 	import Article from './Article.svelte';
 	import hexboisLogo from '$asset/image/hexbois-logo.png';
+  import hexboisThumbnail from '$asset/image/hexbois-thumbnail.png';
 	import { timeSince } from '$lib/util/time-display';
 	import LiveIndicator from '$lib/LiveIndicator.svelte';
 
@@ -27,7 +28,7 @@
 	});
 </script>
 
-<Article color="#f0fbff" info={updatedTimeAgo} href="https://hexbois.com" highlight>
+<Article color="#f0fbff" info={updatedTimeAgo} href="https://hexbois.com" highlight thumbnailImgSrc={hexboisThumbnail}>
 	<img class="hexbois-image" src={hexboisLogo} alt="HEX BOIS" />
 	<span class="number-of-players">
 		<LiveIndicator />

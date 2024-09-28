@@ -1,4 +1,5 @@
 <script lang="ts">
+  export let thumbnailImgSrc: string
 	export let color = 'black';
 	export let href = '/';
 	export let info = '';
@@ -6,6 +7,9 @@
 </script>
 
 <article class="{highlight ? 'highlight' : ''}  article" style="--color:{color}">
+  <div class="thumbnail">
+    <img src={thumbnailImgSrc} alt="thumbnail" />
+  </div>
 	<div class="content">
 		<slot />
     <div class="bottom">
@@ -42,9 +46,14 @@
 		}
 	}
 
-	.content {
-		flex: 1;
-	}
+  .thumbnail {
+    width: 100%;
+
+    img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+  }
 
 	.content {
 		padding: 1rem;
