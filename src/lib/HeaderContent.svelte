@@ -20,13 +20,13 @@
 		Twitter ↗
 	</a>
 	<a
-		href="https://www.youtube.com/channel/UCdznhGoKl0uCv__ZN7oETtQ"
-		title="YouTube"
+		href="https://www.linkedin.com/in/stanflint/"
+		title="LinkedIn"
 		target="_blank"
 		rel="noreferrer"
 		class="youtube"
 	>
-		YouTube ↗
+		LinkedIn ↗
 	</a>
 </div>
 
