@@ -6,20 +6,27 @@
 	export let highlight = false;
 </script>
 
-<article class="{highlight ? 'highlight' : ''}  article" style="--color:{color}">
-  <div class="thumbnail">
-    <img src={thumbnailImgSrc} alt="thumbnail" />
-  </div>
-	<div class="content">
-		<slot />
-    <div class="bottom">
-      <span class="info">{info}</span>
-      <a {href} class="read-more">check it out ↗</a>
+<a class="container" href={href}>
+  <article class="{highlight ? 'highlight' : ''}  article" style="--color:{color}">
+    <div class="thumbnail">
+      <img src={thumbnailImgSrc} alt="thumbnail" />
     </div>
-	</div>
-</article>
+    <div class="content">
+      <slot />
+      <div class="bottom">
+        <span class="info">{info}</span>
+        <a {href} class="read-more">check it out ↗</a>
+      </div>
+    </div>
+  </article>
+</a>
 
 <style lang="scss">
+  .container {
+    text-decoration: none;
+    color: inherit;
+  }
+
 	.article {
 		background-color: var(--color);
 		border-radius: 10px;
