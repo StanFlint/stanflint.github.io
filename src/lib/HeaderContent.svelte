@@ -6,7 +6,6 @@
 		title="GitHub"
 		target="_blank"
 		rel="noreferrer"
-		class="github"
 	>
 		GitHub ↗
 	</a>
@@ -15,7 +14,6 @@
 		title="Twitter"
 		target="_blank"
 		rel="noreferrer"
-		class="twitter"
 	>
 		Twitter ↗
 	</a>
@@ -24,7 +22,6 @@
 		title="LinkedIn"
 		target="_blank"
 		rel="noreferrer"
-		class="youtube"
 	>
 		LinkedIn ↗
 	</a>
