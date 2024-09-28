@@ -8,10 +8,10 @@
 <article class="{highlight ? 'highlight' : ''}  article" style="--color:{color}">
 	<div class="content">
 		<slot />
-	</div>
-	<div class="bottom">
-		<span class="info">{info}</span>
-		<a {href} class="read-more">check it out &rarr</a>
+    <div class="bottom">
+      <span class="info">{info}</span>
+      <a {href} class="read-more">check it out ↗</a>
+    </div>
 	</div>
 </article>
 
@@ -19,7 +19,6 @@
 	.article {
 		background-color: var(--color);
 		border-radius: 10px;
-		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 		position: relative;
@@ -47,13 +46,13 @@
 		flex: 1;
 	}
 
-	.info,
-	.read-more {
-		color: var(--grey);
+	.content {
+		padding: 1rem;
 	}
-
+  
 	.info {
-		float: left;
+    color: var(--grey);
+    float: left;
 	}
 
 	.bottom {
