@@ -1,11 +1,5 @@
-<script>
-	import githubIcon from '$asset/image/github-icon.png';
-	import twitterIcon from '$asset/image/twitter-icon.png';
-	import youtubeIcon from '$asset/image/youtube-icon.png';
-</script>
-
 <h1>Stan Flint</h1>
-<h2>Web developer. Focusing on shared, real-time experiences</h2>
+<h2>Scottish indie game developer. Focusing on multiplayer web games.</h2>
 <div class="social-links">
 	<a
 		href="https://github.com/StanFlint"
@@ -14,7 +8,7 @@
 		rel="noreferrer"
 		class="github"
 	>
-		<img src={githubIcon} alt="GitHub icon" />
+		GitHub ↗
 	</a>
 	<a
 		href="https://twitter.com/StanFlintDev"
@@ -23,7 +17,7 @@
 		rel="noreferrer"
 		class="twitter"
 	>
-		<img src={twitterIcon} alt="Twitter icon" />
+		Twitter ↗
 	</a>
 	<a
 		href="https://www.youtube.com/channel/UCdznhGoKl0uCv__ZN7oETtQ"
@@ -32,7 +26,7 @@
 		rel="noreferrer"
 		class="youtube"
 	>
-		<img src={youtubeIcon} alt="YouTube icon" />
+		YouTube ↗
 	</a>
 </div>
 
@@ -47,49 +41,14 @@
 	}
 
 	.social-links {
-		* {
-			@extend %social-icon;
-
+		a {
 			display: inline-block;
 			margin-right: 0.6rem;
-		}
+      text-decoration: none;
 
-		.github {
-			&::before {
-				background-image: url('$asset/image/github-icon.png');
-			}
-		}
-
-		.twitter {
-			&::before {
-				background-image: url('$asset/image/twitter-icon.png');
-			}
-		}
-
-		.youtube {
-			&::before {
-				background-image: url('$asset/image/youtube-icon.png');
-			}
-		}
-	}
-
-	%social-icon {
-		@extend %icon-link;
-
-		width: 40px;
-		height: 40px;
-	}
-
-	%icon-link {
-		position: relative;
-
-		&::before {
-			content: '';
-			position: absolute;
-			background-repeat: no-repeat;
-			background-size: 100%;
-			width: 100%;
-			height: 100%;
+      &:hover {
+        text-decoration: underline;
+      }
 		}
 	}
 </style>
