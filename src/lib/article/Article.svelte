@@ -6,7 +6,7 @@
 	export let highlight = false;
 </script>
 
-<a class="container" href={href}>
+<a class="container" href={href} target="_blank">
   <article class="{highlight ? 'highlight' : ''}  article" style="--color:{color}">
     <div class="thumbnail">
       <img src={thumbnailImgSrc} alt="thumbnail" />
