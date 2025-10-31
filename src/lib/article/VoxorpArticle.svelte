@@ -9,11 +9,18 @@
 	let numberOfPlayers: number | undefined;
 
 	onMount(async () => {
-		const response = await fetch('https://voxorp.com/api/servers');
-		const servers = await response.json();
-		numberOfPlayers = Array.isArray(servers)
-			? servers.reduce((sum, s) => sum + (s?.players ?? 0), 0)
-			: undefined;
+		try {
+			const response = await fetch('https://voxorp.com/api/servers');
+			if (!response.ok) {
+				return;
+			}
+			const servers = await response.json();
+			numberOfPlayers = Array.isArray(servers)
+				? servers.reduce((sum, s) => sum + (s?.players ?? 0), 0)
+				: undefined;
+		} catch {
+			// Leave numberOfPlayers undefined on error - UI will show "? online"
+		}
 	});
 </script>
 
