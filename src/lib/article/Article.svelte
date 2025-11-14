@@ -1,31 +1,31 @@
 <script lang="ts">
-  export let thumbnailImgSrc: string
+	export let thumbnailImgSrc: string;
 	export let color = 'black';
 	export let href = '/';
 	export let info = '';
 	export let highlight = false;
 </script>
 
-<a class="container" href={href} target="_blank">
-  <article class="{highlight ? 'highlight' : ''}  article" style="--color:{color}">
-    <div class="thumbnail">
-      <img src={thumbnailImgSrc} alt="thumbnail" />
-    </div>
-    <div class="content">
-      <slot />
-      <div class="bottom">
-        <span class="info">{info}</span>
-        <a {href} class="read-more">check it out ↗</a>
-      </div>
-    </div>
-  </article>
+<a class="container" {href} target="_blank">
+	<article class="{highlight ? 'highlight' : ''}  article" style="--color:{color}">
+		<div class="thumbnail">
+			<img src={thumbnailImgSrc} alt="thumbnail" />
+		</div>
+		<div class="content">
+			<slot />
+			<div class="bottom">
+				<span class="info">{info}</span>
+				<a {href} class="read-more">check it out ↗</a>
+			</div>
+		</div>
+	</article>
 </a>
 
 <style lang="scss">
-  .container {
-    text-decoration: none;
-    color: inherit;
-  }
+	.container {
+		text-decoration: none;
+		color: inherit;
+	}
 
 	.article {
 		background-color: var(--color);
@@ -53,22 +53,22 @@
 		}
 	}
 
-  .thumbnail {
-    width: 100%;
+	.thumbnail {
+		width: 100%;
 
-    img {
-      width: 100%;
-      border-radius: 8px 8px 0 0;
-    }
-  }
+		img {
+			width: 100%;
+			border-radius: 8px 8px 0 0;
+		}
+	}
 
 	.content {
 		padding: 1rem;
 	}
-  
+
 	.info {
-    color: var(--grey);
-    float: left;
+		color: var(--grey);
+		float: left;
 	}
 
 	.bottom {

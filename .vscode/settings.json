@@ -1,10 +1,7 @@
 {
-  "cSpell.words": [
-    "sass",
-    "youtube"
-  ],
-  "editor.detectIndentation": false,
-  "editor.indentSize": "tabSize",
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
+	"cSpell.words": ["sass", "youtube"],
+	"editor.detectIndentation": false,
+	"editor.indentSize": "tabSize",
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true
 }

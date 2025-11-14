@@ -17,6 +17,6 @@
 		height: 100%;
 		font-family: Poppins;
 
-    --grey: #606060;
+		--grey: #606060;
 	}
 </style>
