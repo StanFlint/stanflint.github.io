@@ -8,18 +8,22 @@
 	const formatNumberCompact = Intl.NumberFormat('en', { notation: 'compact' }).format;
 	let numberOfPlayers: number | undefined;
 
+  interface ServersResponse {
+    servers: {
+      players: number
+    }[]
+  }
+
 	onMount(async () => {
 		try {
 			const response = await fetch('https://voxorp.com/api/servers');
 			if (!response.ok) {
 				return;
 			}
-			const servers = await response.json();
-			numberOfPlayers = Array.isArray(servers)
-				? servers.reduce((sum, s) => sum + (s?.players ?? 0), 0)
-				: undefined;
-		} catch {
-			// Leave numberOfPlayers undefined on error - UI will show "? online"
+			const servers = await response.json() as ServersResponse;
+			numberOfPlayers = servers.servers.reduce((sum, server) => sum + server.players, 0);
+		} catch (error) {
+      console.error('Error fetching Voxorp server data', error);
 		}
 	});
 </script>
