@@ -30,7 +30,6 @@
 
 <Article
 	color="#fff0f8"
-	info="2020-2022"
 	href="https://voxorp.com"
 	thumbnailImgSrc={voxorpThumbnail}
 >
