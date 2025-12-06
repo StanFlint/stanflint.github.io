@@ -2,7 +2,6 @@
 	export let thumbnailImgSrc: string;
 	export let color = 'black';
 	export let href = '/';
-	export let info = '';
 	export let highlight = false;
 </script>
 
@@ -14,7 +13,6 @@
 		<div class="content">
 			<slot />
 			<div class="bottom">
-				<span class="info">{info}</span>
 				<a {href} class="read-more">check it out ↗</a>
 			</div>
 		</div>
@@ -64,11 +62,6 @@
 
 	.content {
 		padding: 1rem;
-	}
-
-	.info {
-		color: var(--grey);
-		float: left;
 	}
 
 	.bottom {
