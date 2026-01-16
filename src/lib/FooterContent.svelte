@@ -1,7 +1,5 @@
 <div class="content">
-	<span>&lt <a href="https://pierre.wiki">pierre.wiki</a></span>
-	web neighbours
-	<span><a href="https://paulinagerch.uk">paulinagerch.uk</a> &gt</span>
+	Last updated Jan 2026
 </div>
 
 <style lang="scss">
